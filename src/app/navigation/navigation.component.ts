@@ -19,11 +19,11 @@ export class NavigationComponent implements AfterViewInit {
   }
 
   navigate(anchor: string): void {
-    if (!anchor) { return; }
+    this.menuVisible = false;
 
+    if (!anchor) { return; }
     const pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, anchor);
     this.pageScrollService.start(pageScrollInstance);
-    this.menuVisible = false;
   }
 
   ngAfterViewInit(): void {
