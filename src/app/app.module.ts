@@ -6,11 +6,13 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from "app/navigation/navigation.component";
+import { MapComponent } from "app/map/map.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

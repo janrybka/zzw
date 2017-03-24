@@ -82,3 +82,11 @@
 .toggle {
     margin: 5px 5px 0 0;
 }
+
+
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
