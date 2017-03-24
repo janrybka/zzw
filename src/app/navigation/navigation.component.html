@@ -1,0 +1,21 @@
+<a id="menu-toggle" (click)="this.menuVisible = true;" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper" [ngClass]='(menuVisible)?["active"]:[]'>
+  <ul class="sidebar-nav">
+    <a id="menu-close" (click)="navigate(null)" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+    <li class="sidebar-brand">
+      <a (click)="navigate('#top')">Milion drzew dla Warszawy</a>
+    </li>
+    <li>
+      <a (click)="navigate('#top')">Początek</a>
+    </li>
+    <li>
+      <a (click)="navigate('#about')">Informacje o akcji</a>
+    </li>
+    <li>
+      <a (click)="navigate('#join')">Chcesz posadzić drzewo?</a>
+    </li>
+    <li>
+      <a (click)="navigate('#contact')">Kontakt</a>
+    </li>
+  </ul>
+</nav>
