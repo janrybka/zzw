@@ -85,8 +85,9 @@
 
 
 #to-top {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 5px;
   right: 5px;
+  transition: opacity 0.5s;
 }

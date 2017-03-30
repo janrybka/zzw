@@ -10,7 +10,7 @@ declare var $:any;
   styleUrls: ['./navigation.component.css'],
   moduleId: module.id
 })
-export class NavigationComponent implements AfterViewInit {
+export class NavigationComponent {
 
   menuVisible: boolean = false;
 
@@ -24,33 +24,5 @@ export class NavigationComponent implements AfterViewInit {
     if (!anchor) { return; }
     const pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, anchor);
     this.pageScrollService.start(pageScrollInstance);
-  }
-
-  ngAfterViewInit(): void {
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
   }
 }

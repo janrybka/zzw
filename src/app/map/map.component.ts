@@ -6,9 +6,6 @@ import { Component, ViewChild, ElementRef } from "@angular/core";
   templateUrl: './map.component.html'
 })
 export class MapComponent {
-  @ViewChild('mapContainer')
-  mapContainerRef: ElementRef;
-
   pointerEventsValue:string = "none";
 
   mapClick():void {

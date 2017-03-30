@@ -7,12 +7,14 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from "app/navigation/navigation.component";
 import { MapComponent } from "app/map/map.component";
+import { ShowOnScrollDirective } from "app/shared/show-on-scroll.directive";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    MapComponent
+    MapComponent,
+    ShowOnScrollDirective
   ],
   imports: [
     BrowserModule,
