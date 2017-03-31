@@ -13,7 +13,7 @@
 <!-- About -->
 <section id="about" class="about">
   <div style='position:relative;text-align: center;color: white;'>
-    <span class="fa-stack fa-4x" style="margin-top: -2em;">
+    <span class="fa-stack fa-4x" style="margin-top: -2em;cursor: pointer;" (click)="navigate('#about')">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-arrow-down fa-stack-1x text-primary"></i>
     </span>
@@ -43,7 +43,7 @@
             <div class="service-item">
               <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                <i class="fa fa-stack-1x text-primary">1</i>
                             </span>
               <p>Pobierz aplikację Milion Drzew
                 <a href='https://play.google.com/store/apps/details?id=air.com.gamebrain.hocus&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
@@ -60,7 +60,7 @@
             <div class="service-item">
               <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <i class="fa fa-stack-1x text-primary">2</i>
                             </span>
               <p>Wybierz się w miejsce, gdzie chcesz żeby pojawiło się drzewo i ją uruchom.</p>
             </div>
@@ -69,7 +69,7 @@
             <div class="service-item">
               <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <i class="fa fa-stack-1x text-primary">3</i>
                             </span>
               <p>Naciśnij "Zgłoś" i kliknij na mapę, żeby złożyć wniosek.</p>
             </div>
@@ -78,7 +78,7 @@
             <div class="service-item">
               <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <i class="fa fa-stack-1x text-primary">4</i>
                             </span>
               <p>Podaj swoje dane.</p>
             </div>
@@ -188,25 +188,20 @@ Powodów może być wiele. Planując nasadzenia musimy m.in. brać pod uwagę cz
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center">
-        <h4><strong>Milion Drzew</strong>
+        <h4><strong>Zarząd Zieleni m.st. Warszawy</strong>
         </h4>
-        <p>ul. Adres 1
-          <br>Warszawa, Polska</p>
+        <p>ul. Czerniakowska 71
+          <br>00-715 Warszawa
+        </p>
         <ul class="list-unstyled">
-          <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-          <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+          <li><i class="fa fa-phone fa-fw"></i> (22) 277 42 00</li>
+          <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kontakt@zzw.waw.pl">kontakt@zzw.waw.pl</a>
           </li>
         </ul>
         <br>
         <ul class="list-inline">
           <li>
             <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
           </li>
         </ul>
         <hr class="small">
