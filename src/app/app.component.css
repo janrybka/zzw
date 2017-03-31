@@ -1,0 +1,94 @@
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 90%;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+}
+
+/*@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}*/
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('/assets/movies/milio_drzew-cover2.png') bottom center / contain no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+
+  /deep/ body {
+      background: #2d2d2e;
+  }
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.fa-stack .number {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/*.map iframe {
+    pointer-events: none;
+}*/
+
+/* Footer */
+
+footer {
+    padding: 100px 0 0 0;
+}
